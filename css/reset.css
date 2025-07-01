@@ -61,3 +61,7 @@ html::-webkit-scrollbar-thumb {
     margin: auto;
     display: flex;
 }
+
+.product-buttons  {
+  user-select: none;
+}
