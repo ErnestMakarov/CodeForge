@@ -66,14 +66,35 @@
 }
 
 .product-image {
-	width: 100%;
-	max-width: 900px;
-	max-height: 900px;
-	object-fit: contain;
-	background-color: #000;
-	border-radius: 10px;
-	margin-bottom: 20px;
+  width: 100%;
+  max-width: 900px;
+  height: 730px; /* 70% от полной высоты (900px) */
+  object-fit: cover;
+  object-position: center top;
+  background-color: #000;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
+
+.image-crop-wrapper {
+  width: 100%;
+  max-width: 900px;
+  height: 800px; /* фиксированная высота контейнера */
+  overflow: hidden; /* обрезаем все, что выходит за пределы */
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #000;
+  position: relative;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -10%; /* поднимаем изображение вверх на 30% от высоты */
+  object-fit: contain; /* или cover, если нужно заполнить */
+}
+
 
 .thumbnails {
 	display: flex;

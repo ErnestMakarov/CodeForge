@@ -51,12 +51,33 @@
 .link_to_down   {
     margin-top: 200px;
     user-select: none;
+    display: flex;
 }
 
 .link_to_down_text  {
     font-size: 12px;
     margin-top: 12px;
+    display: flex;
 }
+
+.link_to_down_inner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+.down_arrow {
+  width: 24px;
+  height: auto;
+}
+
+.link_to_down {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 .partners {
     margin: 100px auto 50px auto;
