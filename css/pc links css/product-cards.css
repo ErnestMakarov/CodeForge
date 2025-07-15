@@ -68,7 +68,7 @@
 .product-image {
   width: 100%;
   max-width: 900px;
-  height: 730px; /* 70% от полной высоты (900px) */
+  height: auto;
   object-fit: cover;
   object-position: center top;
   background-color: #000;
@@ -79,20 +79,12 @@
 .image-crop-wrapper {
   width: 100%;
   max-width: 900px;
-  height: 800px; /* фиксированная высота контейнера */
-  overflow: hidden; /* обрезаем все, что выходит за пределы */
+  height: auto;
+  overflow: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
   background-color: #000;
-  position: relative;
-}
-
-.product-image {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: -10%; /* поднимаем изображение вверх на 30% от высоты */
-  object-fit: contain; /* или cover, если нужно заполнить */
+  position: static;
 }
 
 

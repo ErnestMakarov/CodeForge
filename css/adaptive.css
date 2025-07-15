@@ -97,3 +97,33 @@
     padding: 0 20px 50px;
   }
 }
+
+@media (max-width: 768px) {
+  .image-crop-wrapper {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #000;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    object-fit: contain;
+    object-position: center;
+    position: static;
+    margin: 0;
+  }
+}
+
+
+
+
